@@ -36,7 +36,12 @@ public class Main {
 
         System.out.println("Who will be the first (Dante, Vergil)");
         String[] players = "Dante, Vergil".split(", ");
-        String player1 = scanner.next();
+        String player1 = scanner.nextLine();
+
+        while (isInvalidPlayerName(players, player1)){
+            System.out.println("Choose between " + players[0] + " and " + players[1]);
+            player1 = scanner.nextLine();
+        }
 
         String player2 = Objects.equals(player1, players[0]) ? players[1] : players[0];
 
@@ -50,7 +55,23 @@ public class Main {
             String currPlayer = player1turn ? player1 : player2;
             System.out.println(currPlayer + "'s turn");
 
-            int numTaken = scanner.nextInt();
+            String inputPencilChoice = scanner.nextLine();
+            // input must be string, convert function to use sting
+
+            do {
+                while (!isValidPencilChoice(inputPencilChoice)) {
+                    System.out.println("Possible values: '1', '2', '3'");
+                    inputPencilChoice = scanner.nextLine();
+                }
+
+                while(isStringNonNumeric(inputPencilChoice)) {
+                    System.out.println("Choice must be numeric");
+                    inputPencilChoice = scanner.nextLine();
+                }
+            } while (!isValidPencilChoice(inputPencilChoice) || isStringNonNumeric(inputPencilChoice));
+
+            int numTaken = Integer.parseInt(inputPencilChoice);
+
             int targetForRemoval = pencils.length() - numTaken;
             pencils=pencils.substring(0,targetForRemoval);
             System.out.println(pencils);
@@ -59,12 +80,13 @@ public class Main {
         }
     }
 
-    public static boolean isNotNumeric(char ch){
-        return ch < '0' || ch > '9';
-    }
-
-    public static boolean isNegative(int num){
-        return num <= 0;
+    public static boolean isInvalidPlayerName(String[] list, String str) {
+        for (String s : list) {
+            if (s.equals(str)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static boolean isStringNonNumeric(String str){
@@ -83,5 +105,9 @@ public class Main {
             }
         }
         return false;
+    }
+
+    public static boolean isValidPencilChoice(String choice){
+        return Objects.equals(choice, "1") || Objects.equals(choice, "2") || Objects.equals(choice, "3");
     }
 }
