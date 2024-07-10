@@ -1,0 +1,29 @@
+type: edu
+files:
+  - name: src/lastpencil/Main.java
+    visible: true
+    learner_created: false
+  - name: test/LastPencilTest.java
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/28001#comment
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #16
+
+    When the user provides a name that is not &#39;Dante&#39; or &#39;Vergil&#39;, the game should inform the user that their input is incorrect and prompt the user for input again with the &quot;Choose between &#39;Dante&#39; and &#39;Vergil&#39;&quot; string.
+
+    Please find below the output of your program during this failed test.
+    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
+
+    ---
+
+    How many pencils would you like to use?
+    &gt; 5
+    Who will be the first (Dante, Vergil)
+    &gt; DanteVergil
+    |||||
+    DanteVergil&#39;s turn
+  time: "Wed, 10 Jul 2024 10:35:09 UTC"
+record: -1
