@@ -7,20 +7,8 @@ files:
     visible: false
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/28001#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #17
-
-    The game should ask the user to input the player that goes first.
-
-    Please find below the output of your program during this failed test.
-    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
-
-    ---
-
-    How many pencils would you like to use?
-    &gt; 20
-    The number of pencils should be positive
-  time: "Thu, 11 Jul 2024 12:30:31 UTC"
+  message: Congratulations!
+  time: "Thu, 11 Jul 2024 12:38:08 UTC"
 record: -1

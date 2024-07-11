@@ -115,7 +115,8 @@ public class Main {
 
     public static boolean isStringNegative(String str){
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) - '0' < 1) {
+            if (str.charAt(i) - '0' < 1 && i < 1) {
+                System.out.println(str.charAt(i) + " + " + (str.charAt(i) - '0'));
                 return true;
             }
         }

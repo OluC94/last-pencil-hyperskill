@@ -2,10 +2,12 @@
 Start test 1[0m
 )How many pencils would you like to use?
 > 0
+0 + 0
 *The number of pencils should be positive
 > a
 )The number of pencils should be numeric
 > 0
+0 + 0
 *The number of pencils should be positive
 > 1
 'Who will be the first (Dante, Vergil)
@@ -13,14 +15,19 @@
 Start test 2[0m
 )How many pencils would you like to use?
 > 0
+0 + 0
 *The number of pencils should be positive
 > 0
+0 + 0
 *The number of pencils should be positive
 > 0
+0 + 0
 *The number of pencils should be positive
 > 0
+0 + 0
 *The number of pencils should be positive
 > 0
+0 + 0
 *The number of pencils should be positive
 [1;31m
 Start test 3[0m
@@ -147,4 +154,791 @@
 Start test 17[0m
 )How many pencils would you like to use?
 > 20
-*The number of pencils should be positive
+'Who will be the first (Dante, Vergil)
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> Dante
+||||||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 1
+|||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|
+Dante's turn
+> 2
+Too many pencils were taken
+> 1
+Vergil won
+[1;31m
+Start test 18[0m
+)How many pencils would you like to use?
+> 30
+'Who will be the first (Dante, Vergil)
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> Dante
+ ||||||||||||||||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||||||||||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 1
+|||||||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+
+||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||
+Vergil's turn
+> 3
+Too many pencils were taken
+> 2
+Dante won
+[1;31m
+Start test 19[0m
+)How many pencils would you like to use?
+> 5
+'Who will be the first (Dante, Vergil)
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+	> Vergil
+|||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 1
+||
+Vergil's turn
+> 3
+Too many pencils were taken
+> 2
+Dante won
+[1;31m
+Start test 20[0m
+)How many pencils would you like to use?
+> 20
+'Who will be the first (Dante, Vergil)
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+	> Vergil
+||||||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 1
+|||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|
+Vergil's turn
+> 2
+Too many pencils were taken
+> 1
+Dante won
+[1;31m
+Start test 21[0m
+)How many pencils would you like to use?
+> 30
+'Who will be the first (Dante, Vergil)
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+> DanteVergil
+!Choose between Dante and Vergil
+	> Vergil
+ ||||||||||||||||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||||||||||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 1
+|||||||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+|||||||||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||||||||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 2
+
+||||||||
+Dante's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+|||||
+Vergil's turn
+> 4
+ Possible values: '1', '2', '3'
+> a
+ Possible values: '1', '2', '3'
+> 0
+ Possible values: '1', '2', '3'
+> -1
+ Possible values: '1', '2', '3'
+> _
+ Possible values: '1', '2', '3'
+> |
+ Possible values: '1', '2', '3'
+> |||||
+ Possible values: '1', '2', '3'
+> 3
+||
+Dante's turn
+> 3
+Too many pencils were taken
+> 2
+Vergil won
