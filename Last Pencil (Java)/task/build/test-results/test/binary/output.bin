@@ -140,3 +140,11 @@
 ||
 Dante's turn
 > 3
+Too many pencils were taken
+> 2
+Vergil won
+[1;31m
+Start test 17[0m
+)How many pencils would you like to use?
+> 20
+*The number of pencils should be positive

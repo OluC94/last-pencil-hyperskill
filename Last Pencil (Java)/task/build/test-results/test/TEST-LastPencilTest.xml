@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LastPencilTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-07-10T15:21:14" hostname="SIS-A00152" time="0.231">
+<testsuite name="LastPencilTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-07-11T12:30:30" hostname="SIS-A00152" time="0.213">
   <properties/>
-  <testcase name="start" classname="LastPencilTest" time="0.231">
-    <failure message="java.lang.AssertionError: Exception in test #16&#10;&#10;java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 2&#10;&#9;at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)&#10;&#9;at java.base/java.lang.String.substring(String.java:2709)&#10;&#9;at lastpencil.Main.main(Main.java:76)&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;How many pencils would you like to use?&#10;&gt; 5&#10;Who will be the first (Dante, Vergil)&#10;&gt; DanteVergil&#10;Choose between Dante and Vergil&#10;&gt; DanteVergil&#10;Choose between Dante and Vergil&#10;&gt; DanteVergil&#10;Choose between Dante and Vergil&#10;&gt; DanteVergil&#10;Choose between Dante and Vergil&#10;&gt; DanteVergil&#10;Choose between Dante and Vergil&#10;&gt; Dante&#10;|||||&#10;Dante's turn&#10;&gt; 4&#10;Possible values: '1', '2', '3'&#10;&gt; a&#10;Possible values: '1', '2', '3'&#10;&gt; 0&#10;Possible values: '1', '2', '3'&#10;&gt; -1&#10;Possible values: '1', '2', '3'&#10;&gt; _&#10;Possible values: '1', '2', '3'&#10;&gt; |&#10;Possible values: '1', '2', '3'&#10;&gt; |||||&#10;Possible values: '1', '2', '3'&#10;&gt; 2&#10;|||&#10;Vergil's turn&#10;&gt; 4&#10;Possible values: '1', '2', '3'&#10;&gt; a&#10;Possible values: '1', '2', '3'&#10;&gt; 0&#10;Possible values: '1', '2', '3'&#10;&gt; -1&#10;Possible values: '1', '2', '3'&#10;&gt; _&#10;Possible values: '1', '2', '3'&#10;&gt; |&#10;Possible values: '1', '2', '3'&#10;&gt; |||||&#10;Possible values: '1', '2', '3'&#10;&gt; 1&#10;||&#10;Dante's turn&#10;&gt; 3" type="java.lang.AssertionError">java.lang.AssertionError: Exception in test #16
+  <testcase name="start" classname="LastPencilTest" time="0.213">
+    <failure message="java.lang.AssertionError: Wrong answer in test #17&#10;&#10;The game should ask the user to input the player that goes first.&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;How many pencils would you like to use?&#10;&gt; 20&#10;The number of pencils should be positive" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #17
 
-java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 2
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
-	at java.base/java.lang.String.substring(String.java:2709)
-	at lastpencil.Main.main(Main.java:76)
+The game should ask the user to input the player that goes first.
 
 Please find below the output of your program during this failed test.
 Note that the '&gt;' character indicates the beginning of the input line.
@@ -15,56 +12,8 @@ Note that the '&gt;' character indicates the beginning of the input line.
 ---
 
 How many pencils would you like to use?
-&gt; 5
-Who will be the first (Dante, Vergil)
-&gt; DanteVergil
-Choose between Dante and Vergil
-&gt; DanteVergil
-Choose between Dante and Vergil
-&gt; DanteVergil
-Choose between Dante and Vergil
-&gt; DanteVergil
-Choose between Dante and Vergil
-&gt; DanteVergil
-Choose between Dante and Vergil
-&gt; Dante
-|||||
-Dante's turn
-&gt; 4
-Possible values: '1', '2', '3'
-&gt; a
-Possible values: '1', '2', '3'
-&gt; 0
-Possible values: '1', '2', '3'
-&gt; -1
-Possible values: '1', '2', '3'
-&gt; _
-Possible values: '1', '2', '3'
-&gt; |
-Possible values: '1', '2', '3'
-&gt; |||||
-Possible values: '1', '2', '3'
-&gt; 2
-|||
-Vergil's turn
-&gt; 4
-Possible values: '1', '2', '3'
-&gt; a
-Possible values: '1', '2', '3'
-&gt; 0
-Possible values: '1', '2', '3'
-&gt; -1
-Possible values: '1', '2', '3'
-&gt; _
-Possible values: '1', '2', '3'
-&gt; |
-Possible values: '1', '2', '3'
-&gt; |||||
-Possible values: '1', '2', '3'
-&gt; 1
-||
-Dante's turn
-&gt; 3
+&gt; 20
+The number of pencils should be positive
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:203)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -254,6 +203,14 @@ Possible values: '1', '2', '3'
 ||
 Dante's turn
 > 3
+Too many pencils were taken
+> 2
+Vergil won
+?[1;31m
+Start test 17?[0m
+How many pencils would you like to use?
+> 20
+The number of pencils should be positive
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

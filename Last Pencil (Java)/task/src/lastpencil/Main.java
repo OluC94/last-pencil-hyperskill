@@ -47,19 +47,23 @@ public class Main {
 
         String pencils = "|".repeat(Math.max(0, pencilNumber));
 
-        System.out.println(pencils);
-
         boolean player1turn = true;
+        String currPlayer;
 
         while (!pencils.isEmpty()){
-            String currPlayer = player1turn ? player1 : player2;
+
+
+            currPlayer = player1turn ? player1 : player2;
+
+            System.out.println(pencils);
+
             System.out.println(currPlayer + "'s turn");
 
             String inputPencilChoice = scanner.nextLine();
             // input must be string, convert function to use sting
 
             do {
-                while (!isValidPencilChoice(inputPencilChoice)) {
+                while (isInvalidPencilChoice(inputPencilChoice)) {
                     System.out.println("Possible values: '1', '2', '3'");
                     inputPencilChoice = scanner.nextLine();
                 }
@@ -68,15 +72,26 @@ public class Main {
                     System.out.println("Choice must be numeric");
                     inputPencilChoice = scanner.nextLine();
                 }
-            } while (!isValidPencilChoice(inputPencilChoice) || isStringNonNumeric(inputPencilChoice));
+
+                while(isChoiceTooLarge(pencils.length(), inputPencilChoice)) {
+                    System.out.println("Too many pencils were taken");
+                    inputPencilChoice = scanner.nextLine();
+                }
+
+            } while (isInvalidPencilChoice(inputPencilChoice) || isStringNonNumeric(inputPencilChoice));
 
             int numTaken = Integer.parseInt(inputPencilChoice);
 
             int targetForRemoval = pencils.length() - numTaken;
             pencils=pencils.substring(0,targetForRemoval);
-            System.out.println(pencils);
+
+            if (pencils.isEmpty()){
+                String winner = player1turn ? player2 : player1;
+                System.out.println(winner + " won");
+            }
 
             player1turn = !player1turn;
+
         }
     }
 
@@ -107,7 +122,12 @@ public class Main {
         return false;
     }
 
-    public static boolean isValidPencilChoice(String choice){
-        return Objects.equals(choice, "1") || Objects.equals(choice, "2") || Objects.equals(choice, "3");
+    public static boolean isInvalidPencilChoice(String choice){
+        return !Objects.equals(choice, "1") && !Objects.equals(choice, "2") && !Objects.equals(choice, "3");
+    }
+
+    public static boolean isChoiceTooLarge(int total, String choice){
+        int numChoice = Integer.parseInt(choice);
+        return numChoice > total;
     }
 }
