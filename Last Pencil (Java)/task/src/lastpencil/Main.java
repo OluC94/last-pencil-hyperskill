@@ -50,7 +50,7 @@ public class Main {
         boolean player1turn = true;
         String currPlayer;
 
-        while (!pencils.isEmpty()){
+        while (!pencils.isEmpty()) {
 
 
             currPlayer = player1turn ? player1 : player2;
@@ -59,26 +59,45 @@ public class Main {
 
             System.out.println(currPlayer + "'s turn");
 
-            String inputPencilChoice = scanner.nextLine();
-            // input must be string, convert function to use sting
+            String inputPencilChoice;
 
-            do {
-                while (isInvalidPencilChoice(inputPencilChoice)) {
-                    System.out.println("Possible values: '1', '2', '3'");
-                    inputPencilChoice = scanner.nextLine();
+            if (Objects.equals(currPlayer, player1)) {
+                inputPencilChoice = scanner.nextLine();
+                do {
+                    while (isInvalidPencilChoice(inputPencilChoice)) {
+                        System.out.println("Possible values: '1', '2', '3'");
+                        inputPencilChoice = scanner.nextLine();
+                    }
+
+                    while (isStringNonNumeric(inputPencilChoice)) {
+                        System.out.println("Choice must be numeric");
+                        inputPencilChoice = scanner.nextLine();
+                    }
+
+                    while (isChoiceTooLarge(pencils.length(), inputPencilChoice)) {
+                        System.out.println("Too many pencils were taken");
+                        inputPencilChoice = scanner.nextLine();
+                    }
+
+                } while (isInvalidPencilChoice(inputPencilChoice) || isStringNonNumeric(inputPencilChoice));
+
+            } else {
+                int currentSize = pencils.length();
+
+                if (botTakesThree(currentSize)){
+                    inputPencilChoice = "3";
+                } else if (botTakesTwo(currentSize)) {
+                    inputPencilChoice = "2";
+                } else if (botTakesOne(currentSize) || currentSize == 1) {
+                    inputPencilChoice = "1";
+                } else {
+                    String[] botChoices = {"1", "2", "3"};
+                    int randIndex = (int) (Math.random() * botChoices.length);
+                    inputPencilChoice = botChoices[randIndex];
                 }
 
-                while(isStringNonNumeric(inputPencilChoice)) {
-                    System.out.println("Choice must be numeric");
-                    inputPencilChoice = scanner.nextLine();
-                }
-
-                while(isChoiceTooLarge(pencils.length(), inputPencilChoice)) {
-                    System.out.println("Too many pencils were taken");
-                    inputPencilChoice = scanner.nextLine();
-                }
-
-            } while (isInvalidPencilChoice(inputPencilChoice) || isStringNonNumeric(inputPencilChoice));
+                System.out.println(inputPencilChoice);
+            }
 
             int numTaken = Integer.parseInt(inputPencilChoice);
 
@@ -131,4 +150,17 @@ public class Main {
         int numChoice = Integer.parseInt(choice);
         return numChoice > total;
     }
+
+    public static boolean botTakesThree(int stackLength){
+        return stackLength % 4 == 0;
+    }
+
+    public static boolean botTakesTwo(int stackLength){
+        return stackLength % 4 == 3;
+    }
+
+    public static boolean botTakesOne(int stackLength){
+        return stackLength % 4 == 2;
+    }
+
 }

@@ -7,5 +7,36 @@ files:
     visible: false
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/28002#comment
-status: Unchecked
-record: -1
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #24
+
+    When the player provides the correct initial game conditions and if Vergil goes first, your program should print 5 non-empty lines in such order:
+    2 for Vergil
+    1 for Vergil&#39;s move
+    2 for Dante
+
+    Please find below the output of your program during this failed test.
+    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
+
+    ---
+
+    How many pencils would you like to use?
+    &gt; 2
+    Who will be the first (Dante, Vergil)
+    &gt; DanteVergil
+    Choose between Dante and Vergil
+    &gt; DanteVergil
+    Choose between Dante and Vergil
+    &gt; DanteVergil
+    Choose between Dante and Vergil
+    &gt; DanteVergil
+    Choose between Dante and Vergil
+    &gt; DanteVergil
+    Choose between Dante and Vergil
+    &gt; Vergil
+    ||
+    Vergil&#39;s turn
+  time: "Mon, 15 Jul 2024 14:26:53 UTC"
+record: 5
