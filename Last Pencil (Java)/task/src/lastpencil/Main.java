@@ -36,24 +36,23 @@ public class Main {
 
         System.out.println("Who will be the first (Dante, Vergil)");
         String[] players = "Dante, Vergil".split(", ");
-        String player1 = scanner.nextLine();
+        String human = scanner.nextLine();
 
-        while (isInvalidPlayerName(players, player1)){
+        while (isInvalidPlayerName(players, human)){
             System.out.println("Choose between " + players[0] + " and " + players[1]);
-            player1 = scanner.nextLine();
+            human = scanner.nextLine();
         }
 
-        String player2 = Objects.equals(player1, players[0]) ? players[1] : players[0];
+        String bot = Objects.equals(human, players[0]) ? players[1] : players[0];
 
         String pencils = "|".repeat(Math.max(0, pencilNumber));
 
-        boolean player1turn = true;
+        boolean humanturn = Objects.equals(bot, "Vergil");
         String currPlayer;
 
         while (!pencils.isEmpty()) {
 
-
-            currPlayer = player1turn ? player1 : player2;
+            currPlayer = humanturn ? human : bot;
 
             System.out.println(pencils);
 
@@ -61,7 +60,7 @@ public class Main {
 
             String inputPencilChoice;
 
-            if (Objects.equals(currPlayer, player1)) {
+            if (Objects.equals(currPlayer, human)) {
                 inputPencilChoice = scanner.nextLine();
                 do {
                     while (isInvalidPencilChoice(inputPencilChoice)) {
@@ -95,7 +94,6 @@ public class Main {
                     int randIndex = (int) (Math.random() * botChoices.length);
                     inputPencilChoice = botChoices[randIndex];
                 }
-
                 System.out.println(inputPencilChoice);
             }
 
@@ -105,12 +103,10 @@ public class Main {
             pencils=pencils.substring(0,targetForRemoval);
 
             if (pencils.isEmpty()){
-                String winner = player1turn ? player2 : player1;
+                String winner = Objects.equals(currPlayer, bot) ? human : bot;
                 System.out.println(winner + " won");
             }
-
-            player1turn = !player1turn;
-
+            humanturn = !humanturn;
         }
     }
 
