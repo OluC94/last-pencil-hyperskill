@@ -36,23 +36,24 @@ public class Main {
 
         System.out.println("Who will be the first (Dante, Vergil)");
         String[] players = "Dante, Vergil".split(", ");
-        String human = scanner.nextLine();
+        String firstPlayer = scanner.nextLine();
 
-        while (isInvalidPlayerName(players, human)){
+        while (isInvalidPlayerName(players, firstPlayer)){
             System.out.println("Choose between " + players[0] + " and " + players[1]);
-            human = scanner.nextLine();
+            firstPlayer = scanner.nextLine();
         }
 
-        String bot = Objects.equals(human, players[0]) ? players[1] : players[0];
+        String secondPlayer = Objects.equals(firstPlayer, players[0]) ? players[1] : players[0];
 
         String pencils = "|".repeat(Math.max(0, pencilNumber));
 
-        boolean humanturn = Objects.equals(bot, "Vergil");
-        String currPlayer;
+
+        // currPlayer = first player
+        // if cuuPlater is Vergil, it is the bot's turn
+        boolean humanTurn = Objects.equals(firstPlayer, "Dante");
+        String currPlayer = firstPlayer;
 
         while (!pencils.isEmpty()) {
-
-            currPlayer = humanturn ? human : bot;
 
             System.out.println(pencils);
 
@@ -60,7 +61,7 @@ public class Main {
 
             String inputPencilChoice;
 
-            if (Objects.equals(currPlayer, human)) {
+            if (Objects.equals(currPlayer, "Dante")) {
                 inputPencilChoice = scanner.nextLine();
                 do {
                     while (isInvalidPencilChoice(inputPencilChoice)) {
@@ -103,10 +104,16 @@ public class Main {
             pencils=pencils.substring(0,targetForRemoval);
 
             if (pencils.isEmpty()){
-                String winner = Objects.equals(currPlayer, bot) ? human : bot;
+                String winner = Objects.equals(currPlayer, secondPlayer) ? firstPlayer : secondPlayer;
                 System.out.println(winner + " won");
             }
-            humanturn = !humanturn;
+            humanTurn = !humanTurn;
+
+            if (currPlayer.equals(firstPlayer)){
+                currPlayer = secondPlayer;
+            } else {
+                currPlayer = firstPlayer;
+            }
         }
     }
 
